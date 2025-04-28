@@ -1,7 +1,7 @@
 #![cfg_attr(not(test), no_std)]
 
 use core::ops::{Index, IndexMut};
-use core::result::Result
+use core::result::Result;
 
 use gc_headers::{GarbageCollectingHeap, HeapError, Pointer, Tracer};
 use gc_headers::HeapError::{IllegalBlock,UnallocatedBlock,OffsetTooBig,MisalignedPointer,ZeroSizeRequest,OutOfMemory,OutOfBlocks};
